@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class CellCrypt {
+public class LagCrypt {
 
     public static void main(String[] args) {
         File file = new File(System.getProperty("user.dir") + "/files/myFile.txt");
