@@ -13,16 +13,15 @@ public class EncryptionTool {
 
     public void encrypt(File fileToEncrypt, int cipherOffset) {
         try {
-            System.out.println("Encrypting");
+            System.out.println("-----Encrypting-----");
             FileInputStream fInputStream = new FileInputStream(fileToEncrypt);
 
             int byteRead = -1;
             int[] fileContents = new int[(int) fileToEncrypt.length()];
             int i = 0;
-            System.out.println(fileContents.length);
+            //System.out.println(fileContents.length);
             while ((byteRead = fInputStream.read()) != -1) {
                 fileContents[i] = byteRead;
-                System.out.println("read:" + fileContents[i]);
                 i++;
             }
             fInputStream.close();
@@ -36,7 +35,7 @@ public class EncryptionTool {
             fOutputStream.flush();
             fOutputStream.close();
 
-            System.out.println("Encrypting done");
+            System.out.println("-----Encrypting done-----\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
