@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 public class EncryptionTool {
 
     //TODO
-    // SEE IF OVERFLOW EFFECTS ENCRYPTION FOR BINARIES.
+    // ADD: Encrypt within mulitple directories.
 
     public EncryptionTool() {
 
